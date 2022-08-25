@@ -131,6 +131,8 @@ header .container .login nav a img {
   display: flex;
   justify-content: space-around;
   padding: 0;
+  margin: 0;
+  --bs-gutter-x: 0;
 }
 .product .container .main .row .card {
   margin-top: 45px;
