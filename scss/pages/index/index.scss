@@ -170,6 +170,8 @@ header {
                 display: flex;
                 justify-content: space-around;
                 padding: 0;
+                margin: 0;
+                --bs-gutter-x: 0;
                 
                 .card {
                     margin-top: 45px;
