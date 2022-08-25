@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+//footer
+.footer{
+    .container{
+        .footer-top{
+            padding: 20px;
+            .row{
+                .col{
+                    .item{
+                        .title-item{
+
+                        }
+                        .list-item{
+                            a{
+                                text-decoration: none;
+                                display: block;
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom{
+            padding: 20px;
+            background-color: #ececec;
+            .row{
+                .col{
+                    .item{
+                        .title-item{
+
+                        }
+                        .list-item{
+                            a{
+                                text-decoration: none;
+                                display: block;
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+//footer
