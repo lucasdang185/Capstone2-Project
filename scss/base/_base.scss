@@ -1,11 +1,81 @@
+$bg-dark : #000000;
+$bg-1 : #F5F5F5;
+$bg-btn : #F8B653;
+
+/*text color*/
+$text-1 : #F6F6F6;
+$text-2 : #000000;
+
+/*font size*/
+$fs-small: 16px;
+$fs-normal: 20px;
+
+/*hover text color*/
+$c-hover: #000000;
+
+
+@mixin button($fs,$fw,$lh,$c,$bg,$pd,$bd,$br,$bg-hover,$c-hover) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+    background: $bg;
+    padding: $pd;
+    border: $bd;
+    border-radius: $br;
+    cursor: pointer;
+    &:hover {
+        background: $bg-hover;
+        color: $c-hover;
+    }
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// Header
+header {
+    background-color: $bg-dark;
+    height: 50px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        .logo {
+            img {
+                width: 116px;
+                height: 32px;
+                position: absolute;
+                top: 10px;
+                left: 24px;
+            }
+        }
 
-
+        .login {
+             nav {
+                position: absolute;
+                right: 50px;
+                top: 10px;
+                color: $text-1;
+                a {
+                    text-decoration: none;
+                    margin-left: 20px;
+                    color: $text-1;
+                    font-size: $fs-small;
+                    img {
+                        width: 31px;
+                        height: 31px;
+                    }
+                }
+             }
+        }
+    }
+}
 
 //footer
 .footer{
