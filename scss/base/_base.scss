@@ -1,14 +1,24 @@
 $bg-dark: #000000;
 $bg-1: #f5f5f5;
 $bg-btn: #f8b653;
+$bg-ft-top:#fafafa;
+$bg-ft-bottom:#ececec;
 
 /*text color*/
 $text-1: #f6f6f6;
 $text-2: #000000;
 
 /*font size*/
+$fs-small-1: 13px;
 $fs-small: 16px;
 $fs-normal: 20px;
+
+/*font weight*/
+$text-c1-thin:300;
+$text-c2-thin:400;
+$text-c1-middle:500;
+$text-c1-bold:600;
+$text-c2-bold:700;
 
 /*hover text color*/
 $c-hover: #000000;
@@ -33,6 +43,7 @@ $c-hover: #000000;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 // Header
@@ -80,35 +91,55 @@ header {
   padding-top: 100px;
   .container-fluid {
     padding: 0;
-    .footer-main {
-        padding: 20px 40px;
+    .footer-main{
       .footer-top {
-        background-color: #fafafa;
+        background-color: $bg-ft-top;
+        padding: 50px 60px;
         .row {
           .col {
             .item {
+              border-right: #dbd8d8 solid 0.1px;
               .title-item {
+                h3{
+                  font-size: $fs-small;
+                  font-weight: $text-c2-bold;
+                }
               }
               .list-item {
+                p{
+                  font-size: $fs-small-1;
+                }
                 a {
+                  font-size: $fs-small-1;
                   text-decoration: none;
                   display: block;
                   color: #000000;
                 }
-              }
-            }
+              }            
+            }            
           }
         }
       }
       .footer-bottom {
-        background-color: #ececec;
+        background-color:$bg-ft-bottom;
+        padding: 50px 60px;
         .row {
           .col {
             .item {
+              border-right: #dbd8d8 solid 0.1px;
+
               .title-item {
+                h3{
+                  font-size: $fs-small;
+                  font-weight: $text-c2-bold;
+                }
               }
               .list-item {
+                p{
+                  font-size: $fs-small-1;
+                }
                 a {
+                  font-size: $fs-small-1;
                   text-decoration: none;
                   display: block;
                   color: #000000;

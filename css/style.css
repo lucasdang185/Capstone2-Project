@@ -1,10 +1,12 @@
 /*text color*/
 /*font size*/
+/*font weight*/
 /*hover text color*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 header {
@@ -47,21 +49,42 @@ header .container .login nav a img {
 .footer .container-fluid {
   padding: 0;
 }
-.footer .container-fluid .footer-main {
-  padding: 20px 40px;
-}
 .footer .container-fluid .footer-main .footer-top {
   background-color: #fafafa;
+  padding: 50px 60px;
+}
+.footer .container-fluid .footer-main .footer-top .row .col .item {
+  border-right: #dbd8d8 solid 0.1px;
+}
+.footer .container-fluid .footer-main .footer-top .row .col .item .title-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .container-fluid .footer-main .footer-top .row .col .item .list-item p {
+  font-size: 13px;
 }
 .footer .container-fluid .footer-main .footer-top .row .col .item .list-item a {
+  font-size: 13px;
   text-decoration: none;
   display: block;
   color: #000000;
 }
 .footer .container-fluid .footer-main .footer-bottom {
   background-color: #ececec;
+  padding: 50px 60px;
+}
+.footer .container-fluid .footer-main .footer-bottom .row .col .item {
+  border-right: #dbd8d8 solid 0.1px;
+}
+.footer .container-fluid .footer-main .footer-bottom .row .col .item .title-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .container-fluid .footer-main .footer-bottom .row .col .item .list-item p {
+  font-size: 13px;
 }
 .footer .container-fluid .footer-main .footer-bottom .row .col .item .list-item a {
+  font-size: 13px;
   text-decoration: none;
   display: block;
   color: #000000;
