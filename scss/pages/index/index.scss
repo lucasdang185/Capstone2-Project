@@ -1,6 +1,8 @@
+
 $bg-dark : #000000;
 $bg-1 : #F5F5F5;
 $bg-btn : #F8B653;
+
 
 /*text color*/
 $text-1 : #F6F6F6;
@@ -93,7 +95,6 @@ header {
                 opacity: 75%;
                 color: $text-2;
                 position: relative;
-
                 &::before {
                     content: "";
                     width: 100%;
