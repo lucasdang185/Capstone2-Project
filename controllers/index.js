@@ -34,7 +34,7 @@ window.onload = function () {
  */
  function renderProduct(arrProduct) { //param : input :arrSinhVien
     var html = ''; //output: string html 
-    for (var i = 0; i < arrProduct.length; i++) {
+    for (var i = 0; i < 6; i++) {
         var sp = arrProduct[i]; //Mỗi lần duyệt lấy ra 1 object sinhVien từ mảng {maSinhVien:'1',tenSinhVien:'...',...}
         html += `
         <div class="card" style="width: 334px" id="${sp.id}">
