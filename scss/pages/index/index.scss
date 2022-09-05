@@ -1,6 +1,7 @@
 $bg-dark : #000000;
 $bg-1 : #F5F5F5;
 $bg-btn : #F8B653;
+$bg-span : #DEDDDC;
 
 /*text color*/
 $text-1 : #F6F6F6;
@@ -28,6 +29,14 @@ $c-hover: #000000;
         background: $bg-hover;
         color: $c-hover;
     }
+}
+
+
+@mixin span($fw,$lh,$bg,$br) {
+    font-weight: $fw;
+    line-height: $lh;
+    background: $bg;
+    border-radius: $br;
 }
 
 * {
@@ -157,6 +166,7 @@ header {
 
 .product {
 
+    margin-bottom: 100px;
     .container {
 
         .title {
@@ -196,12 +206,15 @@ header {
                         padding: 0;
                         border: none;
                         background: #F8F8F8;
+                        display: flex;
                         a {
                             width: 50%;
                             @include button(20px,600 ,24px ,$text-1 ,$bg-btn ,10px 30px ,none ,5px ,$bg-btn,$c-hover)
                         }
                         span {
-                            
+                            width: 50%;
+                            text-align: center;
+                            @include span(600,50px,$bg-span,5px)
                         }
                     }
                 }

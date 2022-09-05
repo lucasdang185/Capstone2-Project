@@ -89,84 +89,97 @@
           <h2>-Product Feature-</h2>
         </div>
         <div class="main">
+          <div class="row" id="list"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
           <div class="row">
-            <div class="card" style="width: 334px">
-              <img src="./img/image 5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1>Adidass Prophere</h1>
-                <p class="card-text">Short descript...</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn">Buy Now</a>
-                <span></span>
-              </div>
-            </div>
-
-            <div class="card" style="width: 334px">
-              <img src="./img/image 5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1>Adidass Prophere</h1>
-                <p class="card-text">Short descript...</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <span></span>
+            <div class="col">
+              <div class="item">
+                <div class="title-item">
+                  <h3>GET HELP</h3>
+                </div>
+                <div class="list-item">
+                  <a href="#">Contact Us</a>
+                  <a href="#">Shopping</a>
+                  <a href="#">NIKEID</a>
+                  <a href="#">Nike+</a>
+                </div>
               </div>
             </div>
-
-            <div class="card" style="width: 334px">
-              <img src="./img/image 5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1>Adidass Prophere</h1>
-                <p class="card-text">Short descript...</p>
+            <div class="col">
+              <div class="item">
+                <div class="title-item">
+                  <h3>ORDERS</h3>
+                </div>
+                <div class="list-item">
+                  <a href="#">Payment options</a>
+                  <a href="#">Shipping and Delivery</a>
+                  <a href="#">Returns</a>
+                </div>
               </div>
-              <div class="card-footer">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <span></span>
+            </div>
+            <div class="col">
+              <div class="item">
+                <div class="title-item">
+                  <h3>REGISTER</h3>
+                </div>
+                <div class="list-item">
+                  <p>
+                    Create one account to manage everything you do with Nike,
+                    from your shopping preference to your Nike+ activity.
+                  </p>
+                  <a href="#">Learn more</a>
+                </div>
               </div>
             </div>
           </div>
-
+        </div>
+        <div class="footer-bottom">
           <div class="row">
-            <div class="card" style="width: 334px">
-              <img src="./img/image 5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1>Adidass Prophere</h1>
-                <p class="card-text">Short descript...</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn">Buy Now</a>
-                <span></span>
-              </div>
-            </div>
-
-            <div class="card" style="width: 334px">
-              <img src="./img/image 5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1>Adidass Prophere</h1>
-                <p class="card-text">Short descript...</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <span></span>
+            <div class="col">
+              <div class="item">
+                <div class="title-item">
+                  <h3>EMAIL SIGN UP</h3>
+                </div>
+                <div class="list-item">
+                  <p>
+                    Be the first to know about new products and special offers.
+                  </p>
+                  <a href="#">Sign up now</a>
+                </div>
               </div>
             </div>
-
-            <div class="card" style="width: 334px">
-              <img src="./img/image 5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1>Adidass Prophere</h1>
-                <p class="card-text">Short descript...</p>
+            <div class="col">
+              <div class="item">
+                <div class="title-item">
+                  <h3>GIFT CARDS</h3>
+                </div>
+                <div class="list-item">
+                  <p>Give the gift that always fits.</p>
+                  <a href="#">View cards</a>
+                </div>
               </div>
-              <div class="card-footer">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <span></span>
+            </div>
+            <div class="col">
+              <div class="item">
+                <div class="title-item">
+                  <h3>STORES NEAR YOU</h3>
+                </div>
+                <div class="list-item">
+                  <p>Locate a Nike retail store or authorized retailer</p>
+                  <a href="#">Search</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
     <!-- bootstrap -->
     <script
@@ -175,5 +188,10 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap -->
+    <!--Model-->
+    <script src="./model/product.js"></script>
+    <!--Axios-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="./controllers/index.js"></script>
   </body>
 </html>
