@@ -31,26 +31,29 @@
       h3 {
         color: $text-3;
       }
-      .list-sizes {
-        .row {
-            margin-bottom: 10px;
-            display: flex;
-            flex-wrap: nowrap;
-          .col {
-            width: auto;
-            flex: none;
-            .item {
-                .btn-size{
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #CCCCCC;
-                }
+      ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            text-align: center;
+            margin-right: 20px;
+            margin-top: 16px;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 24px;
+                font-weight: 600;
+                background-color: #CCCCCC;
+                color: #1E1D1D;
             }
-          }
         }
-      }
+    }
       h4 {
         color: $text-4;
         font-size: $fs-middle;

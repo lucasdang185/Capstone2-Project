@@ -87,7 +87,7 @@ header .container .login nav a img {
   font-size: 13px;
   text-decoration: none;
   display: block;
-  color: #000000;
+  color: #FC0303;
 }
 
 /*text color*/
@@ -270,6 +270,15 @@ header .container .login nav a img {
   background: #F8B653;
   color: #000000;
 }
+.product .container .main .row .card .card-footer span {
+  width: 50%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 50px;
+  background: #DEDDDC;
+  border-radius: 5px;
+}
+
 .Product-Detail {
   padding: 30px 0;
 }
@@ -304,21 +313,26 @@ header .container .login nav a img {
 .Product-Detail .container .pro-content h3 {
   color: #1ED90E;
 }
-.Product-Detail .container .pro-content .list-sizes .row {
-  margin-bottom: 10px;
-  display: flex;
-  flex-wrap: nowrap;
+.Product-Detail .container .pro-content ul {
+  list-style: none;
+  padding-left: 0;
 }
-.Product-Detail .container .pro-content .list-sizes .row .col {
-  width: auto;
-  flex: none;
+.Product-Detail .container .pro-content ul li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 16px;
 }
-.Product-Detail .container .pro-content .list-sizes .row .col .item .btn-size {
+.Product-Detail .container .pro-content ul li a {
+  display: inline-block;
+  text-decoration: none;
   width: 50px;
   height: 50px;
-  border-radius: 10px;
-  border: none;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 600;
   background-color: #CCCCCC;
+  color: #1E1D1D;
 }
 .Product-Detail .container .pro-content h4 {
   color: #FC0303;
@@ -421,11 +435,4 @@ header .container .login nav a img {
 }
 .register .container .register-body .register-form .row .btn-submit .btn {
   padding: 10px 80px;
-.product .container .main .row .card .card-footer span {
-  width: 50%;
-  text-align: center;
-  font-weight: 600;
-  line-height: 50px;
-  background: #DEDDDC;
-  border-radius: 5px;
 }
