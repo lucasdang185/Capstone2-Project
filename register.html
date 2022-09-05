@@ -65,69 +65,71 @@
       <div class="container">
         <h2>Register</h2>
         <div class="register-body">
-          <form id="register-form" class="register-form">
-            <div class="row">
-              <div class="form-group col-md-6 mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                  required
-                />
-                <div id="invalidEmail" class="invalid-feedback"></div>
-              </div>
-              <div class="form-group col-md-6 mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Name"
-                  required
-                />
-                <div id="invalidName" class="invalid-feedback"></div>
-              </div>
-              <div class="form-group col-md-6 mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="Password"
-                />
-                <div id="invalidPass" class="invalid-feedback"></div>
-              </div>
-              <div class="form-group col-md-6 mb-3">
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                  placeholder="Phone"
-                  required
-                />
-                <div id="invalidPhone" class="invalid-feedback"></div>
-              </div>
-              <div class="form-group col-md-6 mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="checkPassword"
-                  placeholder="Password confirm"
-                />
-                <div id="invalidPassConfirm" class="invalid-feedback"></div>
-              </div>
-              <div class="form-group radio-btn-gender col-md-6 mb-3">
-                <label class="title-gender" for="gender">Gender</label>
-                <input type="radio" id="male" name="gender"  />
-                <label style="margin-right: 30px" for="male">Male</label>
-                <input type="radio" id="feMale" name="gender"  />
-                <label for="feMale">Female</label>
-              </div>
-              <div class="form-group col-md-6 mb-3"></div>
-              <div class="form-group btn-submit col-md-6 mb-3">
-                <button id="btnXacNhan" class="btn btn-primary" onclick="themNguoiDung()">Submit</button>
-              </div>
+          <div class="row">
+            <div class="input col-md-6 mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                required
+              />
+              <span id="tbEmail">(*)</span>
             </div>
-          </form>
+            <div class="input col-md-6 mb-3">
+              <input 
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <span id="tbName">(*)</span>
+            </div>
+            <div class="input col-md-6 mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+              />
+              <span id="tbPassword">(*)</span>
+            </div>
+            <div class="input col-md-6 mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Phone"
+                required
+              />
+              <span id="tbPhone">(*)</span>
+            </div>
+            <div class="input col-md-6 mb-3">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password confirm"
+              />
+              <span id="tbPasswordConfirm">(*)</span>
+            </div>
+            <div class="input radio-btn-gender col-md-6 mb-3">
+              <span id="tbGender"></span>
+              <label>Gender</label>
+              <input
+                type="radio"
+                name="gender"
+                value="true"
+              />
+              <label for="male">Male</label>
+              <input type="radio"  name="gender" value="false" />
+              <label for="female">Female</label>
+            </div>
+            <div class="col-md-6 mb-3"></div>
+            <div class=" btn-submit col-md-6 mb-3">
+              <button id="btnSubmit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -172,7 +174,7 @@
                       Create one account to manage everything you do with Nike,
                       from your shopping preference to your Nike+ activity.
                     </p>
-                    <a style="color: rgb(252, 3, 3) ;" href="#">Learn more</a>
+                    <a style="color: rgb(252, 3, 3)" href="#">Learn more</a>
                   </div>
                 </div>
               </div>

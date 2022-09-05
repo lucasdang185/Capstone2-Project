@@ -59,7 +59,7 @@ function renderProductDetail(ObjectProduct) {
 function renderProduct(ObjectProduct) {
   //param : input :arrSinhVien
   var html = ""; //output: string html
-  var arrayProduct = ObjectProduct.relatedProducts
+  var arrayProduct = ObjectProduct.relatedProducts;
   for(let sp of arrayProduct){
     html += `
         <div class="card" style="width: 334px" id="${sp.id}">
