@@ -214,6 +214,9 @@ header .container .login nav a img {
   color: #000000;
 }
 
+.product {
+  margin-bottom: 100px;
+}
 .product .container .title {
   text-align: center;
   margin-top: 50px;
@@ -249,6 +252,7 @@ header .container .login nav a img {
   padding: 0;
   border: none;
   background: #F8F8F8;
+  display: flex;
 }
 .product .container .main .row .card .card-footer a {
   width: 50%;
@@ -417,4 +421,11 @@ header .container .login nav a img {
 }
 .register .container .register-body .register-form .row .btn-submit .btn {
   padding: 10px 80px;
+.product .container .main .row .card .card-footer span {
+  width: 50%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 50px;
+  background: #DEDDDC;
+  border-radius: 5px;
 }
