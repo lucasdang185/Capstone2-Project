@@ -44,7 +44,7 @@ window.onload = function () {
                 <p class="card-text">${sp.shortDescription}</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn">Buy Now</a>
+            <a href="./detail.html?productid=${sp.id}">Buy now</a>
                 <span>
                     ${sp.price}$
                 <span>

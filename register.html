@@ -45,7 +45,7 @@
               ><img src="./img/5b7f1635f1ce04fe2149c056a8e340c9.png" alt=""
             /></a>
             <a href="">Log in</a>
-            <a href="">Register</a>
+            <a href="./register.html">Register</a>
           </nav>
         </div>
       </div>
@@ -53,7 +53,7 @@
 
     <section class="menu">
       <nav>
-        <a href="">Home</a>
+        <a href="./index.html">Home</a>
         <a href="">Men</a>
         <a href="">Women</a>
         <a href="">Kid</a>
@@ -67,74 +67,66 @@
         <div class="register-body">
           <form id="register-form" class="register-form">
             <div class="row">
-              <div class="col-md-6 mb-3">
+              <div class="form-group col-md-6 mb-3">
                 <input
                   type="email"
                   class="form-control"
                   id="email"
                   placeholder="Email"
-                  value=""
                   required
                 />
                 <div id="invalidEmail" class="invalid-feedback"></div>
               </div>
-              <div class="col-md-6 mb-3">
+              <div class="form-group col-md-6 mb-3">
                 <input
                   type="text"
                   class="form-control"
                   id="name"
                   placeholder="Name"
-                  value=""
                   required
                 />
                 <div id="invalidName" class="invalid-feedback"></div>
               </div>
-              <div class="col-md-6 mb-3">
+              <div class="form-group col-md-6 mb-3">
                 <input
                   type="password"
                   class="form-control"
                   id="password"
                   placeholder="Password"
-                  value=""
-                  required
                 />
                 <div id="invalidPass" class="invalid-feedback"></div>
               </div>
-              <div class="col-md-6 mb-3">
+              <div class="form-group col-md-6 mb-3">
                 <input
                   type="tel"
                   class="form-control"
-                  id="tel"
+                  id="phone"
                   placeholder="Phone"
-                  value=""
                   required
                 />
                 <div id="invalidPhone" class="invalid-feedback"></div>
               </div>
-              <div class="col-md-6 mb-3">
+              <div class="form-group col-md-6 mb-3">
                 <input
                   type="password"
                   class="form-control"
-                  id="password-confirm"
+                  id="checkPassword"
                   placeholder="Password confirm"
-                  value=""
-                  required
                 />
                 <div id="invalidPassConfirm" class="invalid-feedback"></div>
               </div>
-              <div class="radio-btn-gender col-md-6 mb-3">
+              <div class="form-group radio-btn-gender col-md-6 mb-3">
                 <label class="title-gender" for="gender">Gender</label>
-                <input type="radio" id="male" name="gender" value="male" />
+                <input type="radio" id="male" name="gender"  />
                 <label style="margin-right: 30px" for="male">Male</label>
-                <input type="radio" id="feMale" name="gender" value="feMale" />
+                <input type="radio" id="feMale" name="gender"  />
                 <label for="feMale">Female</label>
               </div>
-              <div class="col-md-6 mb-3"></div>
-              <div class="btn-submit col-md-6 mb-3">
-                <button class="btn btn-primary">Submit</button>
+              <div class="form-group col-md-6 mb-3"></div>
+              <div class="form-group btn-submit col-md-6 mb-3">
+                <button id="btnXacNhan" class="btn btn-primary" onclick="themNguoiDung()">Submit</button>
               </div>
             </div>
-            
           </form>
         </div>
       </div>
@@ -236,5 +228,8 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="./controllers/register.js"></script>
+    <script src="./model/users.js"></script>
   </body>
 </html>
