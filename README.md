@@ -6,7 +6,5 @@ Thành Viên:
 - Nguyễn Minh Quân
 
 Phân chia công việc:
-Nguyễn Minh Quân
-- Trang index + header
-Đặng Nguyễn Chí Hào
-- Trang detail + register + footer
+- Nguyễn Minh Quân (Trang index + header)
+- Đặng Nguyễn Chí Hào (Trang detail + register + footer)
