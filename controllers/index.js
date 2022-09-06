@@ -37,14 +37,14 @@ window.onload = function () {
     for (var i = 0; i < 6; i++) {
         var sp = arrProduct[i]; //Mỗi lần duyệt lấy ra 1 object sinhVien từ mảng {maSinhVien:'1',tenSinhVien:'...',...}
         html += `
-        <div class="card" style="width: 334px" id="${sp.id}">
+        <div class="card" style="width: 334px" id="">
             <img src="${sp.image}" class="card-img-top" alt="..." />
             <div class="card-body">
                 <h1>${sp.name}</h1>
                 <p class="card-text">${sp.shortDescription}</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn">Buy Now</a>
+            <a href="./detail.html?productid=${sp.id}">Buy now</a>
                 <span>
                     ${sp.price}$
                 <span>

@@ -82,8 +82,7 @@ header .container .login nav a img {
   background-image: url(../img/image\ 6.png);
   background-size: cover;
   background-position: center right;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 500px;
   display: flex;
   justify-content: space-around;

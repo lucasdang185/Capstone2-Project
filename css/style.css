@@ -1,10 +1,12 @@
 /*text color*/
 /*font size*/
+/*font weight*/
 /*hover text color*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 header {
@@ -28,12 +30,12 @@ header .container .login nav {
   position: absolute;
   right: 50px;
   top: 10px;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 header .container .login nav a {
   text-decoration: none;
   margin-left: 20px;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 16px;
 }
 header .container .login nav a img {
@@ -41,22 +43,51 @@ header .container .login nav a img {
   height: 31px;
 }
 
-.footer .container .footer-top {
-  padding: 20px;
+.footer {
+  padding-top: 100px;
 }
-.footer .container .footer-top .row .col .item .list-item a {
+.footer .container-fluid {
+  padding: 0;
+}
+.footer .container-fluid .footer-main .footer-top {
+  background-color: #fafafa;
+  padding: 50px 60px;
+}
+.footer .container-fluid .footer-main .footer-top .row .col .item {
+  border-right: #dbd8d8 solid 0.1px;
+}
+.footer .container-fluid .footer-main .footer-top .row .col .item .title-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .container-fluid .footer-main .footer-top .row .col .item .list-item p {
+  font-size: 13px;
+}
+.footer .container-fluid .footer-main .footer-top .row .col .item .list-item a {
+  font-size: 13px;
   text-decoration: none;
   display: block;
   color: #000000;
 }
-.footer .container .footer-bottom {
-  padding: 20px;
+.footer .container-fluid .footer-main .footer-bottom {
   background-color: #ececec;
+  padding: 50px 60px;
 }
-.footer .container .footer-bottom .row .col .item .list-item a {
+.footer .container-fluid .footer-main .footer-bottom .row .col .item {
+  border-right: #dbd8d8 solid 0.1px;
+}
+.footer .container-fluid .footer-main .footer-bottom .row .col .item .title-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .container-fluid .footer-main .footer-bottom .row .col .item .list-item p {
+  font-size: 13px;
+}
+.footer .container-fluid .footer-main .footer-bottom .row .col .item .list-item a {
+  font-size: 13px;
   text-decoration: none;
   display: block;
-  color: #000000;
+  color: #FC0303;
 }
 
 /*text color*/
@@ -143,8 +174,7 @@ header .container .login nav a img {
   background-image: url(../img/image\ 6.png);
   background-size: cover;
   background-position: center right;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 500px;
   display: flex;
   justify-content: space-around;
@@ -249,6 +279,177 @@ header .container .login nav a img {
   border-radius: 5px;
 }
 
+.Product-Detail {
+  padding: 30px 0;
+}
+.Product-Detail .container {
+  display: flex;
+}
+.Product-Detail .container .pro-img {
+  position: relative;
+  width: 334px;
+  height: 355px;
+  background-color: #f8f8f8;
+}
+.Product-Detail .container .pro-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  margin: auto;
+}
+.Product-Detail .container .pro-content {
+  margin-left: 100px;
+  width: 50%;
+}
+.Product-Detail .container .pro-content h2 {
+  font-size: 30px;
+}
+.Product-Detail .container .pro-content p {
+  font-size: 16px;
+}
+.Product-Detail .container .pro-content h3 {
+  color: #1ED90E;
+}
+.Product-Detail .container .pro-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+.Product-Detail .container .pro-content ul li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 16px;
+}
+.Product-Detail .container .pro-content ul li a {
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #CCCCCC;
+  color: #1E1D1D;
+}
+.Product-Detail .container .pro-content h4 {
+  color: #FC0303;
+  font-size: 30px;
+}
+.Product-Detail .container .pro-content .pro-quality {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.Product-Detail .container .pro-content .pro-quality .btn-quality {
+  background-color: #6181F3;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: #FFFCFC;
+}
+.Product-Detail .container .pro-content .pro-quality span {
+  padding: 5px;
+}
+.Product-Detail .container .pro-content .add-to-card .btn-add {
+  background-color: #D017EE;
+  color: #FFFCFC;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+}
+
+.product-list {
+  margin-top: 30px;
+  background-color: #FFFCFC;
+  padding: 20px 0;
+}
+.product-list .container .pro-title h2 {
+  text-align: center;
+}
+.product-list .container .product-list-items .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-list .container .product-list-items .row .col {
+  width: 33.3333333333%;
+  flex: none;
+  padding: 25px;
+}
+.product-list .container .product-list-items .row .col .item {
+  background-color: #F8F8F8;
+  border-radius: 5px;
+}
+.product-list .container .product-list-items .row .col .item .card-img {
+  text-align: center;
+}
+.product-list .container .product-list-items .row .col .item .card-title {
+  padding: 10px 20px;
+}
+.product-list .container .product-list-items .row .col .item .card-title h2 {
+  font-size: 20px;
+}
+.product-list .container .product-list-items .row .col .item .card-title p {
+  color: #CBC9C9;
+}
+.product-list .container .product-list-items .row .col .item .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  border: none;
+}
+.product-list .container .product-list-items .row .col .item .card-footer .btn {
+  display: inline;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #F6F6F6;
+  background: #E1B067;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.product-list .container .product-list-items .row .col .item .card-footer .btn:hover {
+  background: #E1B067;
+  color: #000000;
+}
+.product-list .container .product-list-items .row .col .item .card-footer span {
+  padding-right: 40px;
+}
+
+.register {
+  padding: 30px;
+}
+.register .container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.register .container .register-body .row .input {
+  position: relative;
+}
+.register .container .register-body .row .input input {
+  font-size: 30px;
+  border: none;
+  border-bottom: 3px solid #AE18E2;
+  box-shadow: none;
+}
+.register .container .register-body .row .input span {
+  position: absolute;
+  right: 0;
+  top: -8px;
+}
+.register .container .register-body .row .radio-btn-gender label {
+  margin-right: 30px;
+  font-size: 24px;
+}
+.register .container .register-body .row .btn-submit .btn {
+  padding: 10px 80px;
+}
 @media screen and (max-width: 600px) {
   .carousel .detail {
     position: relative;

@@ -1,0 +1,142 @@
+.Product-Detail {
+  padding: 30px 0;
+  //   background-color: #f5f5f5;
+  .container {
+    display: flex;
+    .pro-img {
+      position: relative;
+      width: 334px;
+      height: 355px;
+      // padding: 50px;
+      background-color: #f8f8f8;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        margin: auto;
+      }
+    }
+    .pro-content {
+      margin-left: 100px;
+      width: 50%;
+      h2 {
+        font-size: $fs-middle;
+      }
+      p {
+        font-size: $fs-small;
+      }
+      h3 {
+        color: $text-3;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            text-align: center;
+            margin-right: 20px;
+            margin-top: 16px;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 24px;
+                font-weight: 600;
+                background-color: #CCCCCC;
+                color: #1E1D1D;
+            }
+        }
+    }
+      h4 {
+        color: $text-4;
+        font-size: $fs-middle;
+      }
+      .pro-quality {
+        margin-bottom: 10px;
+        font-size: $fs-middle;
+        .btn-quality{
+            background-color: $bg-btn-quality;
+            width: 50px;
+            height: 50px;
+            border: none;
+            color: #FFFCFC;
+        }
+        span{
+            padding:5px;
+        }
+        
+      }
+      .add-to-card {
+        .btn-add{
+            background-color:#D017EE;
+            color:#FFFCFC ;
+            font-size: $fs-normal;
+            padding: 10px;
+            border: none;
+        }
+      }
+    }
+  }
+}
+.product-list{
+    margin-top: 30px;
+    background-color: #FFFCFC;
+    padding: 20px 0;
+    .container{
+        .pro-title{
+            h2{
+                text-align: center;
+            }
+        }
+        .product-list-items{
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                .col{
+                    width: calc(100%/3);
+                    flex: none;
+                    padding: 25px;
+                    .item{
+                        background-color: #F8F8F8;
+                        border-radius: 5px;
+                       .card-img{
+                        text-align: center;
+
+                       } 
+                       .card-title{
+                        padding: 10px 20px;
+                            h2{
+                                font-size: $fs-normal;    
+                            }
+                            p{
+                                color: #CBC9C9;
+                            }
+                       }
+                       .card-footer{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0;
+                        border: none;
+                        .btn{
+                            display: inline;
+                            width: 50%;
+                            @include button(20px,600 ,24px ,$text-1 ,$bg-btn-1 ,15px 30px ,none ,0px,$bg-btn-1,$c-hover)
+                        }
+                        span{
+                            padding-right: 40px;
+                        }
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
