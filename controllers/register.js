@@ -72,10 +72,10 @@ const checkName = () => {
         tb.style.display = 'block'
         tb.style.fontSize = '13px'
         tb.innerHTML = 'Tên không được bỏ trống !!!'
-        return false
+        return false;
     } else {
         tb.style.display = 'none'
-        return true
+        return true;
     }
 }
 
@@ -105,10 +105,10 @@ const checkPassword = () => {
         tb.style.lineHeight = 1.1
         tb.style.top = '-10px'
         tb.innerHTML = 'Mật khẩu từ 8-20 ký tự, phải có cả số và chữ, ít nhất 1 ký tự viết hoa, 1 ký tự đặt biệt !!!'
-        return false
+        return false;
     } else {
         tb.style.display = 'none'
-        return true
+        return true;
     }
 }
 // Kiểm tra nhập lại mật khẩu
@@ -122,10 +122,10 @@ const checkPasswordConfirm = () => {
         tb.style.display = 'block'
         tb.style.fontSize = '13px'
         tb.innerHTML = 'Nhập lại mật khẩu'
-        return false
+        return false;
     } else {
         tb.style.display = 'none'
-        return true
+        return true;
     }
 }
 
@@ -138,10 +138,10 @@ function checkPhone() {
         tb.style.display = 'block'
         tb.innerHTML = 'Phone không được bỏ trống và phải có từ 10-11 số !!!'
         tb.style.fontSize = '13px'
-        return false
+        return false;
     } else {
         tb.style.display = 'none'
-        return true
+        return true;
     }
 }
 // kiểm tra giới tính
@@ -150,9 +150,9 @@ const checkGender = () => {
     if (document.querySelector("#male").checked === false && document.querySelector("#female").checked === false) {
         tb.style.display = 'block'
         tb.innerHTML = 'Hãy chọn giới tính !!!'
-        return false
+        return false;
     } else {
         tb.style.display = 'none'
-        return true
+        return true;
     }
 }
