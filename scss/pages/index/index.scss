@@ -223,3 +223,32 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 620px){
+    .carousel {
+        .thumbnail{}
+        .detail{
+            position: relative;
+            top: 0;
+            left: -120px;
+            a {
+                font-size: small;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .carousel {
+        .thumbnail{}
+        .detail{
+            position: relative;
+            top: 0;
+            left: -320px;
+            a {
+                font-size: small;
+            }
+        }
+    }
+}
