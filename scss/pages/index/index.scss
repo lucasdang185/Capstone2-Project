@@ -209,6 +209,7 @@ header {
                         background: #F8F8F8;
                         display: flex;
                         a {
+                            text-decoration: none;
                             width: 50%;
                             @include button(20px,600 ,24px ,$text-1 ,$bg-btn ,10px 30px ,none ,5px ,$bg-btn,$c-hover)
                         }
