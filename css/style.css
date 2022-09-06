@@ -248,3 +248,24 @@ header .container .login nav a img {
   background: #DEDDDC;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 600px) {
+  .carousel .detail {
+    position: relative;
+    top: 0;
+    left: -120px;
+  }
+  .carousel .detail a {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 420px) {
+  .carousel .detail {
+    position: relative;
+    top: 0;
+    left: -320px;
+  }
+  .carousel .detail a {
+    font-size: small;
+  }
+}
