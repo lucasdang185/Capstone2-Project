@@ -77,7 +77,7 @@
               <span id="tbEmail">(*)</span>
             </div>
             <div class="input col-md-6 mb-3">
-              <input 
+              <input
                 type="text"
                 class="form-control"
                 id="name"
@@ -105,28 +105,25 @@
               />
               <span id="tbPhone">(*)</span>
             </div>
-            <div class="input col-md-6 mb-3">
+            <div class="input input2 col-md-6 mb-3">
               <input
+                id="passwordConfirm"
                 type="password"
                 class="form-control"
                 placeholder="Password confirm"
               />
               <span id="tbPasswordConfirm">(*)</span>
             </div>
-            <div class="input radio-btn-gender col-md-6 mb-3">
+            <div id="gender" class="input radio-btn-gender col-md-6 mb-3">
               <span id="tbGender"></span>
               <label>Gender</label>
-              <input
-                type="radio"
-                name="gender"
-                value="true"
-              />
+              <input id="male" type="radio" name="gender" value="true" />
               <label for="male">Male</label>
-              <input type="radio"  name="gender" value="false" />
+              <input type="radio" id="female" name="gender" value="false" />
               <label for="female">Female</label>
             </div>
             <div class="col-md-6 mb-3"></div>
-            <div class=" btn-submit col-md-6 mb-3">
+            <div class="btn-submit col-md-6 mb-3">
               <button id="btnSubmit" class="btn btn-primary">Submit</button>
             </div>
           </div>
@@ -230,8 +227,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap -->
+    <script src="./model/users.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="./controllers/register.js"></script>
-    <script src="./model/users.js"></script>
   </body>
 </html>

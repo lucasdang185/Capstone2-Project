@@ -433,6 +433,7 @@ header .container .login nav a img {
   position: relative;
 }
 .register .container .register-body .row .input input {
+  font-size: 30px;
   border: none;
   border-bottom: 3px solid #AE18E2;
   box-shadow: none;
@@ -444,7 +445,7 @@ header .container .login nav a img {
 }
 .register .container .register-body .row .radio-btn-gender label {
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 24px;
 }
 .register .container .register-body .row .btn-submit .btn {
   padding: 10px 80px;
